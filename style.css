@@ -11,8 +11,9 @@
     font-family: 'Mulish', sans-serif;
     font-size: 62.5%;
 
-    --color-base-white: #fff;
-    --color-bc-dark-blue: #065E7C;
+    --color-base-white: hsl(0, 0%, 100%);
+    --color-bc-dark-blue: hsl(195, 91%, 25%);
+    --color-bc-search-bar: hsla(0, 0%, 100%, 0.2);
 }
 
 body {
@@ -23,3 +24,45 @@ body {
 header, footer {
     background-color: var(--color-bc-dark-blue);
 }
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.2rem 2.8rem;
+    gap: 2rem;
+    align-items: center;
+}
+
+header #author {
+    max-width: 4.2rem;
+    max-height: 4.2rem;
+    border-radius: 50%;   
+}
+
+.input-wrapper  label{
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+}
+
+.input-wrapper input {
+    width: 100%;
+    padding: 1.6rem;
+
+    font-family: 'Mulish', sans-serif;
+
+    background-color: var(--color-bc-search-bar);
+    border: 0;
+    border-radius: 0.4rem;
+
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: var(--color-base-white);
+}
+
+.input-wrapper input::placeholder {
+    color: var(--color-base-white);
+  
+}
+
