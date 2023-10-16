@@ -110,7 +110,7 @@ section img {
 }
 
 section .title {
-    margin: 3.1rem 4.6rem 6.8rem 3.8rem;
+    margin: 3.1rem 4.6rem 4.8rem 3.8rem;
     display: flex;
     flex-direction: column;
     gap: 0.8rem;
@@ -121,6 +121,7 @@ h1 {
     font-size: 2.4rem;
     font-weight: 700;
     line-height: 160%;
+  
 }
 
 section .title button {
@@ -145,7 +146,7 @@ section p {
     color: var(--color-font-text);
     font-weight: 400;
     line-height: 160%;
-    margin: 0 2.6rem 3.8rem;
+    margin: 0 2.6rem 0 3.8rem;
     padding: 1.5rem;
 
 }
@@ -155,7 +156,11 @@ sidebar {
     flex-direction: column;
     gap: 4.2rem;
     max-width: 38.4rem;
-    margin-bottom: 50rem;
+    margin-bottom: 10rem;
+}
+
+sidebar h1 {
+    margin-left: 1.2rem;
 }
 
 sidebar .card {
@@ -170,7 +175,7 @@ sidebar .card {
 sidebar .card img {
     max-width: 15rem;
     max-height: 8.4rem;
-    padding: 0.7rem;
+ 
 }
 
 sidebar .card-text {
