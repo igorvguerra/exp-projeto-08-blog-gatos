@@ -146,7 +146,7 @@ section p {
 sidebar {
     display: flex;
     flex-direction: column;
-    gap: 3.2rem;
+    gap: 4.2rem;
     max-width: 38.4rem;
     margin-bottom: 4rem;
 }
