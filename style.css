@@ -155,6 +155,7 @@ sidebar .card img {
 sidebar .card-text {
     display: block;
     max-height: 8.4rem;
+    max-width: 21.5rem;
 }
 
 sidebar h2 {
@@ -162,6 +163,7 @@ sidebar h2 {
     font-weight: 700;
     line-height: 160%;
     color: var(--color-font-black);
+    margin-bottom: 1.3rem;
 }
 
 sidebar p {
