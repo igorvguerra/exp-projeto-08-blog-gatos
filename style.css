@@ -155,7 +155,7 @@ section p {
 
 }
 
-sidebar {
+aside {
     display: flex;
     flex-direction: column;
     gap: 4.2rem;
@@ -163,11 +163,11 @@ sidebar {
     margin-bottom: 10rem;
 }
 
-sidebar h1 {
+aside h1 {
     margin-left: 1rem;
 }
 
-sidebar .card {
+aside .card {
     display: flex;
     flex-direction: row;
     gap: 1.6rem;
@@ -176,19 +176,19 @@ sidebar .card {
     justify-content: center;
 }
 
-sidebar .card img {
+aside .card img {
     max-width: 15rem;
     max-height: 8.4rem;
     padding: 0.5rem;
  
 }
 
-sidebar .card img:hover {
+aside .card img:hover {
     filter: hue-rotate(7deg) contrast(101%) saturate(200%);
     transform: scale(1.1) rotate(-2deg);
 }
 
-sidebar .card-text {
+aside .card-text {
     display: flex;
     flex-direction: column;
     max-height: 8.4rem;
@@ -196,7 +196,7 @@ sidebar .card-text {
 
 }
 
-sidebar h2 {
+aside h2 {
     font-size: 1.8rem;
     font-weight: 700;
     line-height: 160%;
@@ -204,7 +204,7 @@ sidebar h2 {
     margin-bottom: 0;
 }
 
-sidebar p {
+aside p {
     font-size: 1.4rem;
     color: var(--color-font-text);
     line-height: 160%;
@@ -230,33 +230,58 @@ footer {
     }
 }
 
-@media (min-width:1120px) {
-    body {
+@media (min-width:700px) {
+    main {
         display: grid;
-        grid-template-areas: 
-        "header header header"
-        "section section sidebar"
-        "footer footer footer";
+        grid-template-areas:
+        "A A A"
+        "B B C"
+        "D D D";
+        
+        gap: 3.2rem;
     }
 
     header {
-        grid-area: header;
+        grid-area: A;
     }
 
     section {
-        grid-area: section;
+        grid-area: B;
+        max-width: 80rem;
+        align-items: center;
+        gap: 3.2rem;
+        
     }
 
-    sidebar {
-        grid-area: sidebar;
+    section img {
+        max-width: 80rem;
+        max-height: 40rem;
+    }
+
+    section .title {
+        display: flex;
+        flex-direction: row;
+        margin: 0;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 3.6rem;
+        
+    }
+
+    section .like-dislike {
+        flex-direction: row;
+    }
+
+
+    aside {
+        grid-area: C;
+              
     }
 
     footer {
-        grid-area: footer;
+        grid-area: D;
     }
 
-    main {
-        overflow-y: unset;
-    }
+   
 
 }
