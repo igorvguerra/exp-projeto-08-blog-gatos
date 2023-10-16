@@ -120,7 +120,6 @@ section .title button {
 
 section .title img {
     margin: auto;
-    justify-content: center;
 }
 
 section .title img:hover {
@@ -131,6 +130,7 @@ section p {
     color: var(--color-font-text);
     font-weight: 400;
     line-height: 160%;
+    padding: 0 0.3rem;
 }
 
 sidebar {
@@ -138,6 +138,7 @@ sidebar {
     flex-direction: column;
     gap: 3.2rem;
     max-width: 38.4rem;
+    margin-bottom: 4rem;
 }
 
 sidebar .card {
@@ -145,6 +146,8 @@ sidebar .card {
     flex-direction: row;
     gap: 1.6rem;
     max-height: 8.4rem;
+    align-items: flex-start;
+    justify-content: center;
 }
 
 sidebar .card img {
@@ -153,7 +156,8 @@ sidebar .card img {
 }
 
 sidebar .card-text {
-    display: block;
+    display: flex;
+    flex-direction: column;
     max-height: 8.4rem;
     max-width: 21.5rem;
 }
@@ -163,7 +167,7 @@ sidebar h2 {
     font-weight: 700;
     line-height: 160%;
     color: var(--color-font-black);
-    margin-bottom: 1.3rem;
+    margin-bottom: 0;
 }
 
 sidebar p {
