@@ -230,7 +230,7 @@ footer {
     }
 }
 
-@media (min-width:700px) {
+@media (min-width:1230px) {
     main {
         display: grid;
         grid-template-areas:
@@ -248,8 +248,12 @@ footer {
     section {
         grid-area: B;
         max-width: 80rem;
+        justify-content: center;
         align-items: center;
-        gap: 3.2rem;
+        
+        margin-left: 5rem;
+        --delay: .4s;
+        animation: appear 1s var(--delay);
         
     }
 
@@ -261,10 +265,12 @@ footer {
     section .title {
         display: flex;
         flex-direction: row;
-        margin: 0;
         align-items: flex-start;
         justify-content: space-between;
         gap: 3.6rem;
+        width: 100%;
+        padding: 1.5rem;
+        border: 0;
         
     }
 
@@ -275,11 +281,28 @@ footer {
 
     aside {
         grid-area: C;
+        align-self: self-start;
               
+    }
+
+    aside .card {
+        --delay: .4s;
+        animation: appear 1s var(--delay);
     }
 
     footer {
         grid-area: D;
+    }
+
+    @keyframes appear {
+        0% {
+            opacity: 0;
+            transform: scale(0,7);
+        }
+    
+        50% {
+            transform: scale(1.2);
+        }
     }
 
    
