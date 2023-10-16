@@ -175,3 +175,13 @@ sidebar p {
     color: var(--color-font-text);
     line-height: 160%;
 }
+
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: var(--color-base-white);
+
+}
