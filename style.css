@@ -29,16 +29,23 @@ header, footer {
     background-color: var(--color-bc-dark-blue);
     width: 100vw;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     padding: 1.2rem 2.8rem;
     align-items: center;
+    gap: 2rem;
+    
 }
+
 
 
 header #author {
     max-width: 4.2rem;
     max-height: 4.2rem;
     border-radius: 50%;   
+}
+
+header form {
+    flex: 1;
 }
 
 .input-wrapper  label{
@@ -65,7 +72,7 @@ header #author {
 
 .input-wrapper input::placeholder {
     color: var(--color-base-white);
-  
+ 
 }
 
 main {
@@ -73,6 +80,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    overflow-y: scroll;
 }
 
 
@@ -95,7 +103,7 @@ section img {
 }
 
 section .title {
-    margin: 3.1rem 6.6rem 10.8rem 2.2rem;
+    margin: 3.1rem 4.6rem 6.8rem 3.8rem;
     display: flex;
     flex-direction: column;
     gap: 0.8rem;
@@ -130,7 +138,9 @@ section p {
     color: var(--color-font-text);
     font-weight: 400;
     line-height: 160%;
-    padding: 0 0.3rem;
+    margin: 0 2.6rem 2.6rem;
+    padding: 1.5rem;
+
 }
 
 sidebar {
@@ -160,6 +170,7 @@ sidebar .card-text {
     flex-direction: column;
     max-height: 8.4rem;
     max-width: 21.5rem;
+
 }
 
 sidebar h2 {
