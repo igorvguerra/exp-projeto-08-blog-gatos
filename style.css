@@ -88,6 +88,7 @@ main {
     align-items: center;
     overflow-y: scroll;
     margin-top: 7.6rem;
+    width: 100%;
 }
 
 
@@ -134,6 +135,10 @@ section .title button {
     border: 0;
 }
 
+section .title button:active {
+
+}
+
 section .title img {
     margin: auto;
 }
@@ -146,7 +151,7 @@ section p {
     color: var(--color-font-text);
     font-weight: 400;
     line-height: 160%;
-    margin: 0 2.6rem 0 3.8rem;
+    margin: 0 2.6rem 0 0;
     padding: 1.5rem;
 
 }
@@ -176,6 +181,11 @@ sidebar .card img {
     max-width: 15rem;
     max-height: 8.4rem;
  
+}
+
+sidebar .card img:hover {
+    filter: hue-rotate(7deg) contrast(101%) saturate(200%);
+    transform: scale(1.1) rotate(-2deg);
 }
 
 sidebar .card-text {
